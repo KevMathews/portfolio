@@ -1,0 +1,62 @@
+body {
+    font-size: 1.1em;
+    color: #333;
+    background-color: #ffffff;
+    letter-spacing: .045em;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(0,0,0, 0.4);
+}
+.slides-navigation .prev,
+.slides-navigation .next {
+    width: 3em;
+    height: 3em;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slides-navigation {
+    z-index: 6;
+}
+.slides-navigation a.prev {
+    left: 1.8em;
+    background-image: url('/img/prev.png');
+}
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url('/img/next.png');
+}
+.titleMessage {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -10%;
+}
+.titleMessage .heading p {
+    color: #ffffff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100%;
+    letter-spacing: .6em;
+}
+.main {
+    font-size: 2.5em;
+}
+.sub {
+    font-size: 1.5em;
+}
+.section {
+    padding: 100px 0;
+}
+.about-image {
+    max-width: 100%;
+}
+.skillsSection {
+    background-color: #574b90;
+    color: #ffffff;
+}
