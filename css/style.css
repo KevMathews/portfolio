@@ -45,18 +45,80 @@ body {
     letter-spacing: .6em;
 }
 .main {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
 .sub {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .section {
     padding: 100px 0;
 }
 .about-image {
     max-width: 100%;
+    width: auto;
+    height: 100%;
 }
 .skillsSection {
     background-color: #574b90;
     color: #ffffff;
+}
+.skill {
+    text-align: center;
+    margin-left: .6px;
+}
+.chart {
+    position: relative; 
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.chart .percent {
+    color: #000000;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 2em;
+}
+.chart .percent:after {
+    content: '%';
+}
+.squareItem {
+    margin-top: 2.5em;
+    position: relative;
+}
+.squareInnerContainer {
+    position: relative;
+    padding: 50px 15px 35px;
+    text-align: center;
+    border: 2px solid #444;
+    border-top: none;
+}
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 30%;
+    border: 1px solid #444;
+}
+.squareInnerContainer:before {
+    right: 0px;
+}.squareInnerContainer:after {
+    left: 0px;
+}
+.squareContent h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #574b90;
+}
+.squareContent h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
 }
