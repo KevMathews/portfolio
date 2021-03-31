@@ -17,13 +17,15 @@ body {
     height: 3em;
     background-size: cover;
     background-repeat: no-repeat;
+    top: 0;
 }
 .slides-navigation {
     z-index: 6;
 }
 .slides-navigation a.prev {
-    left: 1.8em;
+    left: 20px;
     background-image: url('/img/prev.png');
+
 }
 .slides-navigation a.next {
     right: 20px;
@@ -36,7 +38,7 @@ body {
     top: 50%;
     z-index: 5;
     text-align: center;
-    margin-top: -10%;
+    margin-top: -12%;
 }
 
 .titleMessage .heading p {
@@ -47,11 +49,11 @@ body {
 }
 
 .titleMessage .heading .main {
-	font-size: 50px;
+	font-size: 2.6em;
 }
 
 .titleMessage .heading .sub {
-	font-size: 23px;
+	font-size: 1.4em;
 }
 
 .section {
