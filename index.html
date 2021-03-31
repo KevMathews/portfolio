@@ -6,22 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Mathews - Full stack Engineer and Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/84b8aedffb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/superslides.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+    <div class='loader'>
+        <div class='inner'></div>
+    </div>
     <div id="slides">
         <div class='overlay'></div>
         <div class="slides-container">
-            <img src="./img/slide2.jpg" alt="">
+            <img src="./img/slide7.jpg" alt="">
             <img src="./img/slide6.jpg" alt="">
-            <img src="./img/slide3.jpg" alt="">
+
+
         </div>
         <div class='titleMessage'>
             <div class='heading'>
@@ -35,11 +43,40 @@
         </nav>
     </div>
 
+    <nav id='navigation' class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Kevin Mathews</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stats">Stats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div id='about' class='section'>
         <div class='container'>
             <div class='row'>
                 <div class='col-md-5'>
-                    <img class='aboutImage' src='/img/about.gif'>
+                    <img class='about-image' src='/img/about.gif'>
                 </div>
                 <div class='col-md-7'>
                     <h4>My name is Kevin Mathews</h4>
@@ -67,7 +104,7 @@
             <div class='row'>
                 <div class='col-md-12 text-center'>
                     <h2>TECHNICAL SKILLS</h2>
-                    <p>The percentage each skill is used in my web based products</p>
+                    <p>Representation of how often the skills were used in my designs</p>
                 </div>
                 <div class="owl-carousel owl-theme">
                     <div class='skill'>
@@ -76,47 +113,95 @@
                             <canvas height='152' width='152'></canvas>
                         </span>
                         <h4>Javascript</h4>
-                        <p>Used in all of my web based projects</p>
+                        <p>At the heart of most of my apps</p>
                     </div>
                     <div class='skill'>
                         <span class='chart' data-percent='100'>
                             <span class='percent'>100</span>
                             <canvas height='152' width='152'></canvas>
                         </span>
-                        <h4>CSS</h4>
+                        <h4>CSS / SASS</h4>
                         <p>Used in all of my web based projects</p>
+                    </div>
+                    <div class='skill'>
+                        <span class='chart' data-percent='70'>
+                            <span class='percent'>70</span>
+                            <canvas height='152' width='152'></canvas>
+                        </span>
+                        <h4>ADOBE Suite</h4>
+                        <p>Mainly PhotoShop, Illustrator, and After Effects</p>
+                    </div>
+                    <div class='skill'>
+                        <span class='chart' data-percent='40'>
+                            <span class='percent'>40</span>
+                            <canvas height='152' width='152'></canvas>
+                        </span>
+                        <h4>React</h4>
+                        <p>How often I've worked with the React Framework</p>
+                    </div>
+                    <div class='skill'>
+                        <span class='chart' data-percent='50'>
+                            <span class='percent'>50</span>
+                            <canvas height='152' width='152'></canvas>
+                        </span>
+                        <h4>NodeJS</h4>
+                        <p>NodeJS as well as the Express framework</p>
+                    </div>
+                    <div class='skill'>
+                        <span class='chart' data-percent='25'>
+                            <span class='percent'>25</span>
+                            <canvas height='152' width='152'></canvas>
+                        </span>
+                        <h4>NoSQL</h4>
+                        <p>MongoDB and other NoSQL databases</p>
                     </div>
                     <div class='skill'>
                         <span class='chart' data-percent='100'>
                             <span class='percent'>100</span>
                             <canvas height='152' width='152'></canvas>
                         </span>
-                        <h4>HTML</h4>
+                        <h4>HTML5</h4>
                         <p>Used in all of my web based projects</p>
+                    </div>
+                    <div class='skill'>
+                        <span class='chart' data-percent='10'>
+                            <span class='percent'>10</span>
+                            <canvas height='152' width='152'></canvas>
+                        </span>
+                        <h4>Ruby</h4>
+                        <p>Ruby and Ruby on Rails framework</p>
+                    </div>
+                    <div class='skill'>
+                        <span class='chart' data-percent='25'>
+                            <span class='percent'>25</span>
+                            <canvas height='152' width='152'></canvas>
+                        </span>
+                        <h4>SQL</h4>
+                        <p>SQL database use including PostgreSQL</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+
     <div id='stats' class='statsSection section'>
         <div class='container'>
             <div class='row'>
-                <div class='col-md-3 col sm-6'>
+                <!-- <div class='col-md-3 col sm-6'>
                     <div class='squareItem'>
                         <div class='squareInnerContainer'>
                             <div class='squareIcon'>
                                 <i class='fa fa-clock-o'></i>
                             </div>
                             <div class='squareContent'>
-                                <h2 class='counter'>124</h2>
-                                <h3>Clients</h3>
+                                <h2 class='counter'>2</h2>
+                                <h3>Years Experience</h3>
                             </div>
 
                         </div>
                     </div>
-                </div>
-                <div class='col-md-3 col sm-6'>
+                </div> -->
+                <div class='col-md-3 col sm-6 mx-auto'>
                     <div class='squareItem'>
                         <div class='squareInnerContainer'>
                             <div class='squareIcon'>
@@ -130,7 +215,7 @@
                         </div>
                     </div>
                 </div>
-                <div class='col-md-3 col sm-6'>
+                <div class='col-md-3 col sm-6 mx-auto'>
                     <div class='squareItem'>
                         <div class='squareInnerContainer'>
                             <div class='squareIcon'>
@@ -144,7 +229,7 @@
                         </div>
                     </div>
                 </div>
-                <div class='col-md-3 col sm-6'>
+                <!-- <div class='col-md-3 col sm-6'>
                     <div class='squareItem'>
                         <div class='squareInnerContainer'>
                             <div class='squareIcon'>
@@ -154,10 +239,9 @@
                                 <h2 class='counter'>124</h2>
                                 <h3>Clients</h3>
                             </div>
-
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -170,15 +254,247 @@
         </div>
     </div>
 
-    <div id='portfolio' class='section'>
-        <div class='container'>
-            <div class='row'>
-                <div class='container'>
+
+
+    <div id="portfolio" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="heading">
                     <h2>PORTFOLIO</h2>
+                </div>
+                <div class="filter">
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                        <li><a href="#" data-filter=".apps">Apps</a></li>
+                        <li><a href="#" data-filter=".design">Design</a></li>
+                        <li><a href="#" data-filter=".family">Family</a></li>
+                    </ul>
+                </div>
+                <div class='itemsContainer'>
+                    <ul class='items'>
+                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/site1thumb.png">
+                                <div class="icons">
+                                    <a href="./img/site1.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="Toy Story themed store front">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/samp7thumb.jpg">
+                                <div class="icons">
+                                    <a href="./img/samp7.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="Graphic design work for a client">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a> -->
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/site2thumb.png">
+                                <div class="icons">
+                                    <a href="./img/site2.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="Jeopardy game with 150,000 + questions">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="http://jeopardy-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/samp1thumb.jpg">
+                                <div class="icons">
+                                    <a href="./img/samp1.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="Graphic design work for a client">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a> -->
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/site3thumb.png">
+                                <div class="icons">
+                                    <a href="./img/site3.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="Medieval Mayhem a 2D Turn based fighting game with RPG elements">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://kevmathews.github.io/medieval-mayhem/" target="_blank"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/site4thumb.png">
+                                <div class="icons">
+                                    <a href="./img/site4.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="Kev's World of Groceries!  A store front with a to-do list built in">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://groceries-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/samp8thumb.png">
+                                <div class="icons">
+                                    <a href="./img/samp8.gif" title="View image" class="openButton" data-fancybox
+                                        data-caption="BlackJack table designed for a group project">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a> -->
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/samp3thumb.jpg">
+                                <div class="icons">
+                                    <a href="./img/samp3.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="Graphic design work for a client">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a> -->
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/samp4thumb.jpg">
+                                <div class="icons">
+                                    <a href="./img/samp4.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="Graphic design work for a client">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a> -->
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/site5thumb.png">
+                                <div class="icons">
+                                    <a href="./img/site5.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="Chatter Online!  A tribute site to AOL with LIVE chat rooms and  a tribute forum">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="http://chatteronline-km.herokuapp.com/" target="_blank"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/samp2thumb.jpg">
+                                <div class="icons">
+                                    <a href="./img/samp2.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="Graphic design work for a client">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a> -->
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/site6thumb.png">
+                                <div class="icons">
+                                    <a href="./img/site6.gif" title="View image" class="openButton" data-fancybox
+                                        data-caption="Tweeter!  Twitter remake created by team GOAT">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://tweeter-ui-goat.herokuapp.com/" target="_blank"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="design col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./img/thumbnails/samp5thumb.jpg">
+                                <div class="icons">
+                                    <a href="./img/samp5.jpg" title="View image" class="openButton" data-fancybox
+                                        data-caption="Graphic design work for a client">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <!-- <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a> -->
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class='copyrightSection'>
+        <div class='col-md-12 text-center'>
+            <p>&copy; Kevin Mathews 2021</p>
+        </div>
+    </div>
+
 
     <script src='/js/countUp-jquery.js'></script>
     <script src='/js/countUp.js'></script>
@@ -186,13 +502,15 @@
     <script src='/js/typed.min.js'></script>
     <script src='/js/jquery.superslides.min.js'></script>
     <script src='/js/owl.carousel.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-        crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-    <script src='/js/isotope.min.js'></script>
+    <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 </body>
 
