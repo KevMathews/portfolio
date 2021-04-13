@@ -257,18 +257,34 @@ body {
 }
 .items .openButton {
 	float: left;
-	left: -200px;
+    left: -200px;
+    top: -200px;
+	
 }
 .items .projectLink {
 	float: right;
 	right: -200px;
+    top: -200px;
+}
+
+.items .gitHubLink {
+    float: right;
+    bottom: -200px;
+    right: 25px;
 }
 .items .item:hover .openButton {
 	left: 0px;
+    top: 0px;
 }
 .items .item:hover .projectLink {
 	right: 0px;
+    top: 0px;
 }
+.items .item:hover .gitHubLink {
+	right: 25px;
+    bottom: -10px;
+}
+
 .items .item:hover img {
 	-webkit-transform: scale(1.05, 1.05);
     -moz-transform: scale(1.05, 1.05);
@@ -368,4 +384,9 @@ body {
 }
 .owl-item {
     padding: 50px;
+}
+.box {
+    visibility: hidden;
+    animation-duration: 1.44s; 
+    animation-delay: 0.15s
 }

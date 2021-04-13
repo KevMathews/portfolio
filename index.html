@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Mathews - Full stack Engineer and Web Developer</title>
+    <title>Kevin Mathews - Full stack Software Engineer and Web Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/84b8aedffb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/superslides.css">
     <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
@@ -66,6 +67,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.linkedin.com/in/kevmathews/" target="_blank">LinkedIn</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -104,10 +108,33 @@
             <div class='row'>
                 <div class='col-md-12 text-center'>
                     <h2>TECHNICAL SKILLS</h2>
-                    <h4>I want to rework this whole section</h4>
-                    <!-- <p>Representation of how often these skills were used in my designs</p>
+
                 </div>
-                <div class="owl-carousel owl-theme">
+                <!-- <div class="animate" data-animate="bounceIn" data-duration="1s" data-delay="0.5s" data-offset="100"
+                    data-iteration="1"> -->
+                <div class="col-md-3 skillsBoxes box animate" data-animate="bounceIn" data-duration="1.32s"
+                    data-delay="0.18s" style="animation-duration: 1.32s; animation-delay: 0.18s; visibility: hidden;">
+                    <img src='/img/skillscard1.png' />
+
+                </div>
+
+                <div class="col-md-3 skillsBoxes box animate" data-animate="bounceIn" data-duration="1.72s"
+                    data-delay="0.12s" style="animation-duration: 1.32s; animation-delay: 0.18s; visibility: hidden;">
+                    <img src='/img/skillscard3.png' />
+
+                </div>
+                <div class="col-md-3 skillsBoxes box animate" data-animate="bounceIn" data-duration="1.22s"
+                    data-delay="0.18s" style="animation-duration: 1.32s; animation-delay: 0.18s; visibility: hidden;">
+                    <img src='/img/skillscard4.png' />
+
+                </div>
+                <div class="col-md-3 skillsBoxes box animate" data-animate="bounceIn" data-duration="1.62s"
+                    data-delay="0.13s" style="animation-duration: 1.32s; animation-delay: 0.18s; visibility: hidden;">
+                    <img src='/img/skillscard2.png' />
+
+                </div>
+            </div>
+            <!-- <div class="owl-carousel owl-theme">
                     <div class='skill'>
                         <span class='chart' data-percent='90'>
                             <span class='percent'>90</span>
@@ -147,6 +174,8 @@
                         </span>
                         <h4>NodeJS</h4>
                         <p>NodeJS as well as the Express framework</p>
+
+
                     </div>
                     <div class='skill'>
                         <span class='chart' data-percent='25'>
@@ -180,9 +209,9 @@
                         <h4>SQL</h4>
                         <p>SQL database use including PostgreSQL</p>
                     </div> -->
-                </div>
-            </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <div id='stats' class='statsSection section'>
@@ -248,16 +277,21 @@
                 </div>
                 <div class='itemsContainer'>
                     <ul class='items'>
-                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <li onclick='' class="apps active col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
-                                <img src="./img/thumbnails/site1thumb.png">
+                                <img src="./img/thumbnails/site3thumb.png">
                                 <div class="icons">
-                                    <a href="./img/site1.gif" title="View image" class="openButton" data-fancybox
-                                        data-caption="Toy Story themed store front">
+                                    <a href="./img/site3.png" title="View image" class="openButton" data-fancybox
+                                        data-caption="Medieval Mayhem a 2D Turn based fighting game with RPG elements">
                                         <i class="fa fa-search"></i>
                                     </a>
-                                    <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
+                                    <a href="https://kevmathews.github.io/medieval-mayhem/" target="_blank"
+                                        class="projectLink">
                                         <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="https://github.com/KevMathews/medieval-mayhem" target="_blank"
+                                        class="gitHubLink">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                                 <div class='imageOverlay'>
@@ -280,6 +314,26 @@
                         </li>
                         <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
+                                <img src="./img/thumbnails/site7thumb.png">
+                                <div class="icons">
+                                    <a href="./img/site7.gif" title="View image" class="openButton" data-fancybox
+                                        data-caption="Dev package designed to ease the use of 3rd party APIs">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://api-go.app/" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="https://github.com/KevMathews/real_project_5/tree/newFeatures"
+                                        target="_blank" class="gitHubLink">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class='imageOverlay'>
+                                </div>
+                            </div>
+                        </li>
+                        <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
                                 <img src="./img/thumbnails/site2thumb.png">
                                 <div class="icons">
                                     <a href="./img/site2.png" title="View image" class="openButton" data-fancybox
@@ -288,6 +342,9 @@
                                     </a>
                                     <a href="http://jeopardy-km.herokuapp.com/" target="_blank" class="projectLink">
                                         <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="https://github.com/KevMathews/jeopardy" target="_blank" class="gitHubLink">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                                 <div class='imageOverlay'>
@@ -310,21 +367,25 @@
                         </li>
                         <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
-                                <img src="./img/thumbnails/site3thumb.png">
+                                <img src="./img/thumbnails/site1thumb.png">
                                 <div class="icons">
-                                    <a href="./img/site3.png" title="View image" class="openButton" data-fancybox
-                                        data-caption="Medieval Mayhem a 2D Turn based fighting game with RPG elements">
+                                    <a href="./img/site1.gif" title="View image" class="openButton" data-fancybox
+                                        data-caption="Toy Story themed store front">
                                         <i class="fa fa-search"></i>
                                     </a>
-                                    <a href="https://kevmathews.github.io/medieval-mayhem/" target="_blank"
-                                        class="projectLink">
+                                    <a href="https://toystore-km.herokuapp.com/" target="_blank" class="projectLink">
                                         <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="https://github.com/KevMathews/toy-store" target="_blank"
+                                        class="gitHubLink">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                                 <div class='imageOverlay'>
                                 </div>
                             </div>
                         </li>
+
                         <li onclick='' class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
                             <div class="item">
                                 <img src="./img/thumbnails/site4thumb.png">
@@ -335,6 +396,10 @@
                                     </a>
                                     <a href="https://groceries-km.herokuapp.com/" target="_blank" class="projectLink">
                                         <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="https://github.com/KevMathews/world-of-groceries" target="_blank"
+                                        class="gitHubLink">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                                 <div class='imageOverlay'>
@@ -395,6 +460,9 @@
                                         class="projectLink">
                                         <i class="fa fa-link"></i>
                                     </a>
+                                    <a href="https://github.com/KevMathews/chatol" target="_blank" class="gitHubLink">
+                                        <i class="fab fa-github"></i>
+                                    </a>
                                 </div>
                                 <div class='imageOverlay'>
                                 </div>
@@ -425,6 +493,10 @@
                                     <a href="https://tweeter-ui-goat.herokuapp.com/" target="_blank"
                                         class="projectLink">
                                         <i class="fa fa-link"></i>
+                                    </a>
+                                    <a href="https://github.com/KevMathews/tweeter-ui/tree/kevin" target="_blank"
+                                        class="gitHubLink">
+                                        <i class="fab fa-github"></i>
                                     </a>
                                 </div>
                                 <div class='imageOverlay'>
@@ -562,7 +634,7 @@
     <script src='/js/typed.min.js'></script>
     <script src='/js/jquery.superslides.min.js'></script>
     <script src='/js/owl.carousel.min.js'></script>
-
+    <script src="/js/jquery.scrolla.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
