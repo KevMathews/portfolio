@@ -82,7 +82,7 @@ setTimeout(setSpeed, 1000);
 
 
 let skillsTopOffset = $('.skillsSection').offset().top;
-let statsTopOffset = $('.statsSection').offset().top;
+let statsTopOffset = $('.contactSection').offset().top;
 let countUpFinished = false;
 $(window).scroll(function() {
     if(window.pageYOffset > skillsTopOffset - $(window).height() + 250){
@@ -159,5 +159,8 @@ function stickyNavigation() {
         body.removeClass("fixedNav");
     }
 }
+
+
+
 
 });
