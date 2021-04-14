@@ -3,7 +3,7 @@ $(window).on('load', function(){
         $('.loader').fadeOut(800);
     });
     $('.items').isotope({
-        filter: '.apps',
+        filter: '*',
         animationOptions: {
             duration: 1500,
             easing: 'linear',
