@@ -1,7 +1,9 @@
-<center>
-<h1>Looking for work!</h1>
 
-<h3>
-<a href='https://www.kevmathews.com>'>KevMathews.com</a>
+# Looking for work!
+
+
+## [KevMathews.com](http://www.kevmathews.com)
 <br />
-<a href='mailTo:kevinmathews.cs@gmail.com'>kevinmathews.cs@gmail.com</a>
+ 
+
+ ### [KevinMathews.cs@gmail.com](mailto:kevinmathews.cs@gmail.com?subject=[GitHub]%20Your%20Git)
