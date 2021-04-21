@@ -73,6 +73,7 @@ body {
 .skillsSection, .contactSection {
     background-color: #574b90;
     color: #ffffff;
+    
 }
 .skill {
     text-align: center;
@@ -388,5 +389,14 @@ body {
 .box {
     visibility: hidden;
     animation-duration: 1.44s; 
-    animation-delay: 0.15s
+    animation-delay: 0.15s;
+}
+.skillsImg, .skillsBoxes {
+    width: 100%;
+    height: auto;
+}
+
+.skillsContainer, .skillsBoxes {
+    display: inline-block;
+    
 }
