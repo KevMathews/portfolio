@@ -383,10 +383,15 @@ body {
     right: 0px;
 }
 .owl-item {
-    padding: 50px;
+    padding: 20px;
+    width: 90%;
 }
 .box {
     visibility: hidden;
     animation-duration: 1.44s; 
     animation-delay: 0.15s
+}
+.skillBoxes {
+    width: auto;
+    
 }
