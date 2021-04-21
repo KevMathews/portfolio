@@ -77,9 +77,11 @@ setTimeout(setSpeed, 1000);
 // });
 
 
-    $('.animate').scrolla();
+    // $('.animate').scrolla();
 
-
+    $('.animate').scrolla({
+          mobile: true
+        });
 
 let skillsTopOffset = $('.skillsSection').offset().top;
 let statsTopOffset = $('.contactSection').offset().top;
