@@ -13,13 +13,17 @@ $(window).on('load', function(){
 })
 $(() => {
 
+
+//  Plugin I used for the splash screen was called superSlides 
+// below is the function to call it with the paramaters i want to set
 $('#slides').superslides({ 
     animation: 'fade',
     play: 4700,
     pagination: false,
     animation_easing: 'swing'
 })
-
+//  Below is the plugin 'typed' that I used which crated the typewriter
+//  effect on the splash page 
 let typed = new Typed(".typed", {
     strings: ["Full Stack Software Engineer", "Web Developer"],
     typeSpeed: 80,
@@ -30,22 +34,14 @@ let typed = new Typed(".typed", {
     showCursor: false
 });
 
+//  Below is the owl-carousel plugin which is used in the skills section of 
+// my portfolio along with the parameters I ended up using
 $(".owl-carousel").owlCarousel({
-    // loop: true,
-    // nav: true,
-    // items: 1,
-    // autoplay: 500,
-    // autoplaySpeed:500,
-    // dots: true,
-
-
-
-
+    dots: true,
     navigation : true,
     loop: true,
     items: 6,
     autoplay: true,
-    
     slideTransition: 'linear',
     autoplaySpeed: 6000,
     smartSpeed: 6000,
@@ -66,25 +62,24 @@ $(".owl-carousel").owlCarousel({
         }
     }
 });
-
+//  below is what i made to create a steady scroll in owl carousel
 $('.owl-carousel').trigger('play.owl.autoplay',[2000]);
 
 function setSpeed(){
     $('.owl-carousel').trigger('play.owl.autoplay',[6000]);
 }
-
 setTimeout(setSpeed, 1000);
-// });
 
 
-    // $('.animate').scrolla();
-
+//  below is what is used to animate the skills as you scroll into view of the skills section
     $('.animate').scrolla({
           mobile: true
         });
 
 let skillsTopOffset = $('.skillsSection').offset().top;
 let statsTopOffset = $('.contactSection').offset().top;
+//  Below code is used in the skills sections I have currently and I have modified it from one I
+//  also made for my previous attempts.
 let countUpFinished = false;
 $(window).scroll(function() {
     if(window.pageYOffset > skillsTopOffset - $(window).height() + 250){
@@ -113,7 +108,9 @@ $(window).scroll(function() {
 
 $('[data-fancybox]').fancybox();
 
-
+//  one of my favorite finds for plugins in isotope!  Below I setup the 
+// filters which allow me to swap between different categories for viewing. 
+// LOVE old school jQuery :D 
     $('#filters a').click(function(){
         $('#filters .current').removeClass('current');
         $(this).addClass('current');
@@ -128,15 +125,7 @@ $('[data-fancybox]').fancybox();
         });
         return false;
     });
-// $('#navigation li a').click(function(e) {
-//     e.preventDefault();
-//     let targetElement = $(this).attr('href');
-//     let targetPosition = $(targetElement).offset().top;
-//     $('html, body').animate({
-//         scrollTop: targetPosition - 70
-//     }, 'slow');
 
-// });
 $("#navigation li a").click(function(e) {
     let targetElement = $(this).attr("href");
 
@@ -148,6 +137,8 @@ $("#navigation li a").click(function(e) {
     $("html, body").animate({ scrollTop: targetPosition - 50 }, "fast");
 });
 
+
+//  below code is used to allow nav bar to float or move depending on where you are 
 const nav = $('#navigation');
 const navTop = nav.offset().top;
 $(window).on('scroll', stickyNavigation);
